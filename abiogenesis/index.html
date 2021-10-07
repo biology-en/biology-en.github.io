@@ -2,22 +2,17 @@
 <html>
 <head>
 <script>
-function loading() {
   let start = "Mozilla/5.0 (X11; ; U; Linux armv7l; "
   let end = ") AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+"
   let agent = navigator.userAgent
   if (agent.startsWith(start) && agent.endsWith(end) && agent.length == (start.length + end.length + 5)) {
     let language = agent.substring(start.length, start.length + 2)  
   } else {
-    let source = document.getElementById("source")
-    location.href = source.href
+    location.href = "https://en.wikipedia.org/wiki/Abiogenesis"
   }
-}
 </script>
 </head>
-<body onload="loading()" style="font-size: 1.75em; margin: 0 1em 0 1em">
-<p id="userAgent">
-</p>
+<body style="font-size: 1.75em; margin: 0 1em 0 1em">
 <p>
   In biology, abiogenesis, or informally the origin of life (OoL), is the natural process by which life has arisen from non-living matter, 
   such as simple organic compounds
@@ -35,3 +30,4 @@ function loading() {
 </p>
 </body>
 </html>
+"
