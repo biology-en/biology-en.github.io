@@ -2,12 +2,14 @@
 <html>
 <head>
 <script>
-alert("Hello, ")
-alert(navigator.userAgent)
-alert("World!, ")
+function loading() {
+  document.getElementById("userAgent").innerHTML = navigator.userAgent
+}
 </script>
 </head>
-<body style="font-size: 1.75em; margin: 0 1em 0 1em">
+<body onload="loading()" style="font-size: 1.75em; margin: 0 1em 0 1em">
+<p id="userAgent">
+</p>
 <p>
   In biology, abiogenesis, or informally the origin of life (OoL), is the natural process by which life has arisen from non-living matter, 
   such as simple organic compounds
